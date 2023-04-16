@@ -1,0 +1,650 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    user-select: none;
+}
+
+.containers{
+    width: 100%;
+    display: flex;
+    /* border: 1px solid red; */
+}
+
+.div-left{
+    width: 20%;
+    /* border: 1px solid red; */
+    background-color: #1e1e28;
+}
+
+
+.logo {
+    
+    height: 70px;
+    
+    /* border: 1px solid red; */
+
+}
+
+.logo .text-top {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    margin: auto;
+    margin-top: 20px;
+    /* border: 1px solid red; */
+    width: 250px;
+    height: 50px;
+}
+
+.logo .text-top a{
+    text-decoration: none;
+    color: rgb(215, 210, 210);
+}
+
+.div-khung{
+    width: 100%;
+    height: 30px;
+    background-color: #2a2a38;
+}
+
+.text-quantri{
+    background-color: #1e1e28;
+    /* display: flex; */
+    width: 100%;
+    height: 50px;
+    /* margin-left: 20px; */
+    /* border: 1px solid red; */
+    /* text-align: center; */
+    padding-top: 10px;
+}
+
+.text-quantri span{
+    margin-left: 30px;
+    font-size: 20px;
+    color: rgb(215, 210, 210);
+    
+}
+
+.text-quantri i{
+    color: white;
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+.menu{
+    
+    text-align: center;
+    width: 100%;
+    height: 500px;
+    background-color: white;
+}
+
+
+.menu .div-menu{
+    background-color: #2a2a38;
+    text-align: left;
+    width: 100%;
+    height: 80px;
+    /* border: 1px solid red; */
+    margin: 0px auto;
+    padding-top: 25px;
+    border-bottom: 1px solid rgb(19, 19, 19);
+    
+}
+
+.menu .div-menu a{
+    text-decoration: none;
+}
+
+.menu .div-menu a p:hover{
+    color: rgb(223, 223, 61);
+}
+
+.menu .div-menu a .yellow{
+    color: rgb(223, 223, 61);
+}
+
+.menu .div-menu p{
+    font-size: 20px;
+    color: white;
+    margin-left: 72px;
+}
+
+
+
+
+.div-right{
+    margin-top: 10px;
+    width: 78%;
+    /* border: 1px solid red; */
+    margin-left: 20px;
+}
+
+.div-right .home-tk{
+    display: flex;
+    width: 100%;
+    /* border: 1px solid red; */
+    
+}
+
+.div-right .home-tk .home a{
+    text-decoration: none;
+    color: rgb(71, 70, 70);
+    margin-left: 20px;
+}
+
+.div-right .home-tk .home a:hover{
+    color: gray;
+}
+
+.div-right .home-tk .home{
+    /* border: 1px solid red; */
+    /* float: left; */
+    width: 50%;
+    padding-top: 11px;
+    
+}
+
+.div-right .home-tk .tk{
+    width: 50%;
+    height: 50px;
+    text-align: right;
+    /* border: 1px solid red; */
+    padding-top: 11px;
+    margin-right: 20px;
+}
+
+.div-right .home-tk .tk a i{
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.div-right .home-tk .tk a{
+    text-decoration: none;
+    color: rgb(71, 70, 70);
+}
+
+.div-right .home-tk .tk a:hover{
+    color: gray;
+}
+
+.name-btn{
+    display: flex;
+    margin-top: 40px;
+    border-bottom: 1px solid gray;
+}
+
+.name-btn p{
+    margin-right: 20px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.ban-quyen {
+    width: 100%;
+    height: 50px;
+    margin: 0px auto;
+    background-color: black;
+    text-align: center;
+    padding-top: 12px;
+    color: rgb(151, 147, 147);
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+.ban-quyen span {
+    color: rgb(212, 205, 205);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/* ------------------ Thêm mới loại hàng  ---------------- */
+
+.div-right .form_add{
+    margin-top: 30px;
+    height: 475px;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+.div-right .form_add .text-input-form{
+    padding-top: 60px;
+    margin-left: 50px;
+    display: flex;
+    font-size: 20px;
+    color: green;
+}
+
+
+.div-right .form_add .text-input-form .maloai input{
+    width: 80px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    /* padding-left: 10px; */
+    font-size: 16px;
+    text-align: center;
+}
+
+.div-right .form_add .text-input-form .tenloai{
+    margin-left: 150px;
+}
+
+.div-right .form_add .text-input-form .tenloai input{
+    width: 400px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 10px;
+    font-size: 16px;
+    
+}
+
+.div-right .form_add .text-input-form .tenloai .err{
+    color: red;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+.div-right .form_add .text-input-form .maloai, .tenloai input:focus{outline:0;}
+
+.btn-form{
+    margin-top: 80px;
+    margin-left: 50px;
+}
+
+.btn-form #them{
+    width: 100px;
+    height: 40px;
+    background-color: rgb(48, 48, 159);
+    color: white;
+    border: none;
+    margin-right: 40px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-form #nl{
+    width: 100px;
+    height: 40px;
+    background-color: rgb(48, 48, 159);
+    color: white;
+    border: none;
+    margin-right: 40px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+/* --------------------- Danh sách loại hàng --------------- */
+
+.tb{color: green;}
+
+.table{
+    text-align: center;
+}
+
+.table tbody td{
+    /* border:  1px solid red; */
+    height: 50px;
+}
+
+.table tbody td:nth-child(1){
+    width: 10%;
+    padding-top: 18px;
+}
+
+.table tbody td:nth-child(2){
+    width: 20%;
+    padding-top: 18px;
+
+}
+
+.table tbody td:nth-child(3){
+    width: 30%;
+    padding-top: 18px;
+
+}
+
+.table tbody td:nth-child(4){
+    width: 40%;
+}
+
+#s{
+    width: 60px;
+    height: 40px;
+    background-color: yellow;
+    color: red;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    /* font-weight: bold;    */
+}
+
+#s:hover{
+    background-color: rgb(234, 234, 23);
+}
+
+#x{
+    width: 60px;
+    height: 40px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    /* font-weight: bold;    */
+}
+
+#x:hover{
+    background-color: rgb(232, 20, 20);
+}
+
+
+
+
+/* --------------------------- Danh sách Sản phẩm -------------------- */
+
+#tablesp{
+    text-align: center;
+}
+
+#tablesp tbody td{
+    /* border:  1px solid red; */
+    height: 50px;
+}
+
+#tablesp tbody td:nth-child(1){
+    width: 2%;
+    padding-top: 18px;
+}
+
+#tablesp tbody td:nth-child(2){
+    width: 3%;
+    padding-top: 18px;
+
+}
+
+#tablesp tbody td:nth-child(3){
+    width: 20%;
+    padding-top: 18px;
+    /* border:  1px solid red; */
+
+}
+
+#tablesp tbody td:nth-child(4){
+    width: 15%;
+    /* border:  1px solid red; */
+
+}
+
+#tablesp tbody td:nth-child(5){
+    width: 10%;
+    /* border:  1px solid red; */
+
+}
+
+#tablesp tbody td:nth-child(6){
+    width: 10%;
+    /* border:  1px solid red; */
+
+}
+
+#tablesp tbody td:nth-child(7){
+    width: 5%;
+}
+
+#tablesp tbody td:nth-child(8){
+    width: 10%;
+    /* border: 1px solid red; */
+    
+}
+
+
+/* -------------------------- Thêm mới sản phẩm -------------- */
+
+.div-right .form_add-sp{
+    margin-top: 30px;
+    height: 475px;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+.div-right .form_add-sp .text-input-form-sp{
+    padding-top: 40px;
+    margin-left: 50px;
+    display: flex;
+    
+    font-size: 18px;
+    color: black;
+    width: 95%;
+    /* border: 1px solid red; */
+
+}
+
+.div-right .form_add-sp .text-input-form-sp .text-input-form-sp-div1{
+    /* border: 1px solid red; */
+    height: 320px;
+    width: 25%;
+
+}
+
+.div-right .form_add-sp .text-input-form-sp .text-input-form-sp-div2{
+    /* border: 1px solid red; */
+    height: 320px;
+    width: 40%;
+}
+
+.div-right .form_add-sp .text-input-form-sp .text-input-form-sp-div3{
+    /* border: 1px solid red; */
+    height: 320px;
+    width: 35%;
+}
+
+.div-right .form_add-sp .text-input-form-sp .price, .address, .mota{
+    margin-top: 30px;
+
+}
+
+.div-right .form_add-sp .text-input-form-sp .text-input-form-sp-div1 .masp select{
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    margin-top: -20px;
+    border: 1px solid gray;
+    /* padding-left: 10px; */
+    font-size: 16px;
+    text-align: center;
+   
+}
+
+
+
+.div-right .form_add-sp .text-input-form-sp .text-input-form-sp-div1 .price input{
+    width: 180px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    /* padding-left: 10px; */
+    font-size: 16px;
+    text-align: center;
+    margin-top: -90px;
+
+}
+
+.div-right .form_add-sp .text-input-form-sp .text-input-form-sp-div2 .tensp input{
+    /* border: 1px solid red; */
+    width: 300px;
+    height: 35px;
+    border-radius: 5px;
+    margin-top: -20px;
+    border: 1px solid gray;
+    /* padding-left: 10px; */
+    font-size: 16px;
+    text-align: center;
+}
+
+.div-right .form_add-sp .text-input-form-sp .text-input-form-sp-div2 .address input{
+    /* border: 1px solid red; */
+    width: 300px;
+    height: 35px;
+    border-radius: 5px;
+    margin-top: -20px;
+    border: 1px solid gray;
+    /* padding-left: 10px; */
+    font-size: 16px;
+    text-align: center;
+}
+
+.div-right .form_add-sp .text-input-form-sp .text-input-form-sp-div3 .tensp input{
+    /* border: 1px solid red; */
+    
+    border-radius: 3px;
+    margin-top: -20px;
+    font-size: 16px;
+    color: red;
+}
+
+
+.btn-form-sp{
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.btn-form-sp #them{
+    width: 100px;
+    height: 40px;
+    background-color: rgb(48, 48, 159);
+    color: white;
+    border: none;
+    margin-right: 40px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-form-sp #nl{
+    width: 100px;
+    height: 40px;
+    background-color: rgb(48, 48, 159);
+    color: white;
+    border: none;
+    margin-right: 40px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.div-right .form_add-sp .text-input-form-sp .masp, .price, .tensp, input:focus{outline:0;}
+
+
+.div-right .form_add-sp .text-input-form-sp .mota textarea{
+    outline: 0;
+    padding-left: 5px;
+}
+
+
+
+/* ---------------- Danh sách Sản phẩm ---------------- */
+.name-btn .btnsp{
+    /* border:  1px solid red; */
+    margin-left: 110px;
+
+}
+
+
+.name-btn .search-list-sp{
+    width: 80%;
+    /* border:  1px solid red; */
+    display: flex;
+    margin-top: 15px;
+}
+
+.name-btn #kyw{
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    border: 2px solid rgb(127, 122, 122);
+    padding-left: 10px;
+}
+
+.name-btn .select-dm{
+    background-color: #3c3c51;
+    color: white;
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    /* padding-left: 10px; */
+    text-align: center;
+    margin: 0px 3px 0px 3px;
+    cursor: pointer;
+    
+}
+
+.name-btn .select-dm option{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+/* .name-btn .select-dm option:hover{
+    background-color: blue;
+} */
+
+.name-btn .listok{
+    background-color: #3c3c51;
+    color: white;
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.name-btn .add{
+    background-color: rgb(6, 105, 6);
+    color: white;
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.table tbody tr td a #s {
+    padding: 10px 15px;
+    background-color: yellowgreen;
+    border: none;
+    color: red;
+    border-radius: 3px;
+    /* margin-right: 10px; */
+    font-size: 14px;
+    margin-bottom: 5px;
+    /* margin-top: 10px; */
+}
+
+.table tbody tr td a #x {
+    padding: 10px 15px;
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    /* margin-right: 10px; */
+    font-size: 14px;
+    /* margin-top: 10px; */
+}
+
+/* .table tbody tr td{
+    padding-top: 20px;
+} */
+
+.table{
+    background-color: rgb(227, 227, 227);
+}

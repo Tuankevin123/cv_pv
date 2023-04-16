@@ -1,0 +1,16 @@
+{
+    "name": "asus/thiet_ke",
+    "authors": [
+        {
+            "name": "Tuankevin123",
+            "email": "tuantaitu10a5@gmail.com"
+        }
+    ],
+    "require": {},
+
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}

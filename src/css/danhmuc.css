@@ -1,0 +1,977 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/* ----------------- Menu top ------------- */
+
+
+.menu-top {
+    width: 100%;
+    background-color: black;
+    height: 90px;
+}
+
+.top {
+    width: 80%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 90px;
+
+}
+
+.dangky-dangnhap {
+    padding-top: 35px;
+
+}
+
+.dangky-dangnhap a {
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    font-weight: 700;
+}
+
+.dangky-dangnhap a:hover {
+    color: wheat;
+}
+
+.logo {
+    text-align: center;
+    height: 90px;
+    color: white;
+}
+
+.logo .text-top {
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+}
+
+.logo .text-bottom {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: -25px;
+    letter-spacing: 5px;
+}
+
+.search-cart {
+    color: white;
+    padding-top: 35px;
+    text-align: right;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-gap: 2px; */
+}
+
+.search-cart .search {
+    /* margin-right: 10px; */
+    text-align: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 5px;
+    text-align: right;
+    height: 35px;
+    width: 255px;
+    margin-right: 2px;
+    /* border: 1px solid red; */
+
+}
+
+.a{
+    /* border: 1px solid red; */
+    width: 150px;
+}
+
+.search-cart .search .fa-sharp {
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 10px;
+    /* position: relative; */
+}
+
+
+.search-cart a {
+    text-decoration: none;
+    color: white;
+}
+
+.search-cart a:hover {
+    color: aqua;
+}
+
+.search-cart .cart {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.search-cart .cart .fa-sharp {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+
+
+
+/* .show {
+    position: absolute;
+    margin-left: 120px;
+    border: 2px solid rgba(205, 199, 199, 0.5);
+    width: 250px;
+    height: 100px;
+    padding-top: 30px;
+    background-color: white;
+    border-radius: 5px;
+    display: none;
+
+} */
+
+#show {
+    width: 250px;
+    height: 100px;
+    padding-top: 30px;
+    background-color: white;
+    position: relative;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 3px;
+    display: none;
+    margin-left: 165px;
+    margin-top: 8px;
+    z-index: 2;
+    border: 2px solid #ddd;
+}
+
+#show:before {
+    content: "";
+    width: 0;
+    height: 0;
+    /* right: 100%;
+    top: 38px; */
+    position: absolute;
+    border-left: 8px solid transparent;
+    border-bottom: 11px solid white;
+    border-right: 8px solid transparent;
+    bottom: 100%;
+    left: 50px;
+}
+
+#ss {
+    display: none;
+}
+
+#ss:hover~#show {
+    display: block;
+}
+
+#show:hover{
+    display: block;
+}
+
+.tim-kiem {
+    margin-right: -5px;
+    margin-left: -10px;
+    border: 2px solid rgba(127, 124, 124, 0.5);
+    border-radius: 5px 0px 0px 5px;
+}
+
+#tim-kiem {
+    width: 180px;
+    height: 35px;
+    padding-left: 5px;
+}
+
+
+
+.btn-timkiem {
+    width: 50px;
+    height: 35px;
+    background-color: red;
+    margin-right: 5px;
+    color: white;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+
+}
+
+.menu-n {
+    background-color: #d6d4d4;
+    width: 100%;
+    height: 50px;
+    /* margin-bottom: 40px; */
+    /* z-index: 2000; */
+}
+
+.menu-t {
+    width: 80%;
+    margin: 0px auto;
+    height: 50px;
+    text-align: center;
+    
+}
+
+.menu-t ul {
+    padding-top: 13px;
+    height: 50px;
+}
+
+.menu-t ul li {
+    display: inline;
+    margin: 0px 30px;
+    padding: 12px 0px 12px 0px;
+    /* border: 2px solid red; */
+}
+
+.menu-t ul li:hover{
+    border-bottom: 3px solid red;
+}
+
+.menu-t ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    /* margin-bottom: 20px; */
+    /* border: 2px solid red; */
+}
+
+/* ----------- Danh mục ----------- */
+
+/* .menu-n .menu-t ul li select{
+    border: none;
+    background-color: #d6d4d4;
+    font-size: 16px;
+    font-weight: bold;
+} */
+
+.dm{
+    position: relative;
+    
+    /* border: 1px solid red; */
+}
+
+.select-dm{
+    position: absolute;
+    left: 620px;
+    top: 140px;
+    z-index: 2;
+    border: 2px solid #ddd;
+    width: 220px ;
+    background-color: white;
+    display: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #777;
+    border-radius: 3px;
+}
+
+.select-dm .div p:hover{
+    color: red;
+}
+
+.select-dm:before{
+    content: "";
+    width: 0;
+    height: 0;
+    /* right: 100%;
+    top: 38px; */
+    position: absolute;
+    border-left: 8px solid transparent;
+    border-bottom: 8px solid white;
+    border-right: 8px solid transparent;
+    bottom: 100%;
+    left: 80px;
+}
+
+#down-dm{
+    display: none;
+}
+
+.select-dm .div{
+    height: 50px;
+    /* border: 1px solid red; */
+
+}
+
+.select-dm .div p{
+    padding-top: 10px;
+}
+
+.select-dm:hover{
+    display: block;
+}
+
+#down-dm:hover ~#select-dm{
+    display: block;
+}
+
+.menu-t ul li .dm i{
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+
+/* ------------- Banner ------------- */
+
+.banner {
+    width: 100%;
+    
+    /* border: 2px solid red; */
+    margin-bottom: 60px;
+    position: relative;
+}
+
+#banner {
+    height: 230px;
+    text-align: right;
+    /* border: 1px solid red;   */
+}
+
+.banner .text-banner{
+    position: absolute;
+    width: 100%;
+    height: 220px;
+    background-color: rgba(0, 0, 0, 0.75);
+    top: 0px;
+    text-align: center;
+}
+
+.banner .text-banner{
+    padding-top: 60px;
+}
+
+.banner .text-banner .text-top p{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+
+.banner .text-banner .text-bottom p a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.banner .text-banner .text-bottom p .cheo{
+    color: grey;
+    margin: 0px 10px;
+}
+
+.banner .text-banner .text-bottom p .gioithieu{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.banner img {
+    width: 100%;
+    height: 220px;
+    
+}
+
+
+/* ---------------- Main ------------- */
+main {
+    width: 100%;
+    margin-bottom: 80px;
+    /* border: 2px solid red; */
+
+}
+
+/* ------------------ Danh mục ---------------------*/
+
+.danhmuc {
+    width: 80%;
+    margin: 0px auto;
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    margin-top: 30px;
+}
+
+/* -------------- Lọc ------------------------ */
+
+.danhmuc .dm-left{
+    width: 42%;
+    /* border: 1px solid red; */
+}
+
+.dm-left .tieude-dm{
+    font-size: 18px;
+    color: grey; 
+}
+
+.dm-left .tieude-dm .black{
+    font-weight: bold;
+    margin-left: 10px;
+    color: black;
+}
+
+.dm-left .tieude-dm .gray{
+    margin-right: 10px;
+}
+
+.loc-sp{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid rgb(220, 217, 217);
+}
+
+.loc-sp .tieu-de{
+    margin-bottom: 20px;
+}
+
+.loc-sp .tieu-de span{ 
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.loc-sp .tieu-de span i{
+    margin-right: 10px;
+}
+
+.loc-dm{
+    width: 100%;
+    height: 200px;
+    border-bottom: 1px solid rgb(220, 217, 217);
+}
+
+.loc-dm p{
+    font-size: 16px;
+}
+
+.loc-dm .check-dm{
+    font-size: 16px;
+    word-spacing: 2px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.loc-dm .check-dm input{
+    margin-right: 10px;
+}
+
+/* <!-- ---------- Địa điểm ----------- --> */
+
+.loc-diadiem{
+    width: 100%;
+    height: 200px;
+    border-bottom: 1px solid rgb(220, 217, 217);
+    margin-top: 20px;
+}
+
+.loc-diadiem p{
+    font-size: 16px;
+}
+
+.loc-diadiem .check-dm{
+    font-size: 16px;
+    word-spacing: 2px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.loc-diadiem .check-dm input{
+    margin-right: 10px;
+}
+
+/* <!-- --------- Đơn vị vận chuyển ---- --> */
+.loc-dvvc{
+    width: 100%;
+    height: 150px;
+    border-bottom: 1px solid rgb(220, 217, 217);
+    margin-top: 20px;
+}
+
+.loc-dvvc p{
+    font-size: 16px;
+}
+
+.loc-dvvc .check-dm{
+    font-size: 16px;
+    word-spacing: 2px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.loc-dvvc .check-dm input{
+    margin-right: 10px;
+}
+
+
+/* <!-- --------- Thương Hiệu ---- --> */
+.loc-thuonghieu{
+    width: 100%;
+    height: 150px;
+    border-bottom: 1px solid rgb(220, 217, 217);
+    margin-top: 20px;
+}
+
+.loc-thuonghieu p{
+    font-size: 16px;
+}
+
+.loc-thuonghieu .check-dm{
+    font-size: 16px;
+    word-spacing: 2px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.loc-thuonghieu .check-dm input{
+    margin-right: 10px;
+}
+
+
+/* <!-- --------- Đánh Giá --------- --> */
+
+.loc-dg{
+    width: 100%;
+    height: 200px;
+    border-bottom: 1px solid rgb(220, 217, 217);
+    margin-top: 20px;
+}
+
+.loc-dg p{
+    font-size: 16px;
+}
+
+.loc-dg .check-dm{
+    font-size: 16px;
+    word-spacing: 2px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    width: 100px;
+}
+
+.loc-dg .check-dm:hover{
+    /* border-bottom: 1px solid #444; */
+    background-color: #d6d4d4;
+}
+
+.loc-dg .check-dm i{
+    color: orangered;
+}
+
+/* <!-- --------- Giá ---- --> */
+.loc-gia{
+    margin-bottom: 30px;
+    width: 100%;
+    height: 150px;
+    border-bottom: 1px solid rgb(220, 217, 217);
+}
+
+.loc-gia p{
+    margin-top: 20px;
+}
+
+.loc-gia .check-dm{
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+
+.loc-gia .check-dm input{
+    width: 100px;
+    padding-left: 5px;
+}
+
+.loc-gia .check-dm span{
+    margin: 0px 6px;
+}
+
+.loc-gia .button-ad{
+    width: 200px;
+    margin: 0px auto;
+}
+
+.loc-gia .button-ad button{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(238, 77, 45);
+    font-size: 14px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+}
+
+
+.loc-gia .button-ad button:hover{
+    background-color: rgb(246, 71, 7);
+    color: rgb(224, 220, 220);
+}
+
+.button-delete{
+    width: 200px;
+    margin: 0px auto;
+    margin-bottom: 30px;
+}
+
+.button-delete button{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(238, 77, 45);
+    font-size: 14px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+}
+
+.button-delete button:hover{
+    background-color: rgb(240, 69, 7);
+    color: rgb(224, 220, 220);
+}
+
+
+/* -------------------- Bài viết --------------------- */
+
+.bai-viet{
+    margin-bottom: 30px;
+    width: 100%;
+    
+    /* height: 150px; */
+    /* border-bottom: 1px solid rgb(220, 217, 217); */
+}
+
+.bai-viet .tieude p{
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* .bai-viet .check-dm{
+    margin-left: 10px;
+    margin-bottom: 30px;
+} */
+
+.div-baiviet .text-img{
+    display: flex;
+    margin-top: 20px;
+    
+}
+
+.div-baiviet{
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    height: 410px;
+}
+
+.div-baiviet .text-img .img{
+    margin-right: 15px;
+}
+
+.div-baiviet .text-img .img img{
+    width: 50px;
+    height: 43px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.div-baiviet .text-img .text{
+    width: 150px;
+    /* border: 1px solid red; */
+}
+
+.div-baiviet .text-img .text p{
+    font-size: 14px;
+    color: #444;
+}
+
+
+/* ------------------- DM RIGHT ------------------------ */
+
+.danhmuc .dm-right{
+    width: 158%;
+    /* border: 1px solid red; */
+    margin-left: -330px;
+}
+
+.danhmuc .dm-right .thutu{
+    text-align: right;
+}
+
+.danhmuc .dm-right .thutu #select-tt{
+    width: 200px;
+    height: 35px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.dm-right .sanpham{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.dm-right .sanpham .div-sanpham{
+    /* border: 1px solid red; */
+    text-align: center;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px -2px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+}
+
+.dm-right .sanpham .div-sanpham:hover{
+    box-shadow: 0 5px 5px 2px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+}
+
+.danhmuc .dm-right .sanpham .div-sanpham .img{
+    /* border: 1px solid red; */
+    width: 80%;
+    height: 150px;
+    margin: 0px auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.danhmuc .dm-right .sanpham .div-sanpham .img img{
+    
+    width: 100%;
+    height: 150px;
+    /* border: 1px solid red; */
+
+}
+
+.danhmuc .dm-right .sanpham .div-sanpham .text p{
+    font-size: 16px;
+    color: #444;
+}
+
+.danhmuc .dm-right .sanpham .div-sanpham .price{
+    margin-top: -15px;
+}
+
+.danhmuc .dm-right .sanpham .div-sanpham .price p{
+    color: red;
+}
+
+.dg-dc{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.dg-dc .dg i{
+    color: orangered;
+}
+
+
+.trangsp{
+    display: flex;
+    width: 14%;
+    margin: 0px auto;
+    margin-top: 40px;
+    /* border: 1px solid red; */
+    
+}
+
+.trangsp .trang{
+    text-align: center;
+    border: 2px solid #444;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: 0px auto;
+    /* background-color: orangered; */
+    color: #444;
+}
+
+.trangsp .trang:hover{
+    background-color: #c30005; border: none; color: white;
+}
+
+.trangsp .trang p{
+    padding-top: 4px;
+    font-size: 16px;
+    
+}
+
+/* --------------- Footer ------------------- */
+footer {
+    width: 100%;
+    background-color: rgb(27, 26, 26);
+}
+
+.footer {
+    width: 80%;
+    margin: 0px auto;
+}
+
+.thong-tin {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    grid-gap: 20px;
+    border-bottom: 0.6px solid white;
+    margin-bottom: 30px;
+}
+
+.div-lh {
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.div-lh .gt {
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.div-lh .ke {
+    width: 35px;
+    height: 3px;
+    background-color: rgb(206, 6, 6);
+}
+
+.gt-text {
+    display: flex;
+    width: 300px;
+    font-size: 14px;
+    color: rgb(164, 159, 159);
+    margin-top: 20px;
+}
+
+.dc-text {
+    width: 280px;
+    font-size: 14px;
+    color: rgb(164, 159, 159);
+    margin-top: 20px;
+}
+
+.dc-text i {
+    color: white;
+
+}
+
+.dc-text .email {
+    margin-top: 5px;
+    display: flex;
+}
+
+.dc-text .dc {
+    display: flex;
+}
+
+.dc .dc-tt {
+    margin-left: 15px;
+}
+
+.dc-text .sdt-i {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.dc-text .sdt-i .sdt {
+    margin-left: 15px;
+}
+
+.dc-text .email .text {
+    margin-left: 15px;
+}
+
+.gt-text img {
+    margin: 0px 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+}
+
+.div-lh .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+    width: 280px;
+}
+
+
+.div-lh .menu .text-menu a{
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(164, 159, 159);
+}
+
+.div-lh .menu .text-menu a:hover{
+    color: red;
+}
+
+.div-tt {
+    width: 96%;
+    margin: 0px auto;
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.div-tt .text-tt {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    width: 300px;
+    /* border: 1px solid red; */
+}
+
+.div-tt .email-btn {
+    width: 400px;
+    /* border: 1px solid red; */
+    margin-left: -90px;
+    display: flex;
+}
+
+.div-tt .email-btn #email {
+    width: 280px;
+    height: 35px;
+    border-radius: 5px 0px 0px 5px;
+    border: none;
+}
+
+.div-tt .email-btn #email::placeholder{
+    padding-left: 10px;
+    /* border: none; */
+}
+
+
+.div-tt .email-btn input:focus{outline:0;}
+
+.div-tt .email-btn .btn {
+    width: 100px;
+    height: 35.5px;
+    background-color: red;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    border-radius: 0px 5px 5px 0px;
+    border: none;
+    margin-left: 1px;
+}
+
+.div-tt .email-btn .btn:hover {
+    background-color: rgb(130, 5, 5);
+    color: white;
+}
+
+
+.div-tt .tk-nganhang {
+    width: 400px;
+}
+
+.ban-quyen {
+    width: 100%;
+    height: 50px;
+    margin: 0px auto;
+    background-color: black;
+    text-align: center;
+    padding-top: 12px;
+    color: rgb(151, 147, 147);
+    font-size: 16px;
+
+}
+
+.ban-quyen span {
+    color: rgb(212, 205, 205);
+    font-size: 16px;
+    font-weight: bold;
+}
