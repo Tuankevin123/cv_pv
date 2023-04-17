@@ -92,7 +92,7 @@
                     </span>
 
                     <div class="a">
-                        <a href="">
+                        <a href="/cart">
                             <span class="cart">GIỎ HÀNG / 0đ <i class="fa-sharp fa-solid fa-cart-shopping"></i></span>
                         </a>
                     </div>

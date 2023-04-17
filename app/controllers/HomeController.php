@@ -135,13 +135,17 @@ class HomeController extends Controller
     }
 
     public function cart(Request $request){
+        // $id = $request->getBody()['id'];
         $cartId = $_SESSION['user']->id;
         $cart = CartModel::cart($cartId);
+        // $product = ProductModel::findOne($id);
 
+        
         return $this->view(
             '/cart',
             [
-                'cart' => $cart
+                'cart' => $cart,
+                // 'product' => $product
             ]
         );
 
@@ -187,6 +191,15 @@ class HomeController extends Controller
         $yourURL = "/product";
         echo ("<script>location.href = ' $yourURL '</script>");
         exit();
+    }
+
+    public function deleteCart(Request $request)
+    {
+        $id = $request->getBody()['id'];
+        $p = new CartModel();
+        $p->delete($id);
+        header("Location:/cart");
+        exit;
     }
 
 

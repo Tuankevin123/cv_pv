@@ -275,6 +275,8 @@
                             <input type="hidden" name="cart_img" value="<?= $product->img ?>">
                             <input type="hidden" name="cart_priceB" value="<?= $product->price_b ?>">
                             <input type="hidden" name="cart_moTa" value="<?= $product->mo_ta ?>">
+                            <input type="hidden" name="cart_idProduct" value="<?= $product->id ?>">
+
 
 
                             <button type="submit" class="them_gh">

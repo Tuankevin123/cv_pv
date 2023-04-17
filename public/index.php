@@ -57,6 +57,8 @@ Router::post('/sanpham_ct', [HomeController::class, 'storeBl']);
 Router::get('/cart', [HomeController::class, 'cart']);
 Router::post('/cart', [HomeController::class, 'storeCart']);
 
+Router::get('/delete-cart', [HomeController::class, 'deleteCart']);
+
 
 
 // ++++++++++++++++++++ Login - Logup ++++++++++++++++++++++

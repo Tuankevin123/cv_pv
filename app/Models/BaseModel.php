@@ -142,7 +142,7 @@ class BaseModel{
     }
 
     public function delete($id){
-        $this->sqlBuilDer = "DELETE FROM $this->tableName WHERE id=$id";
+        $this->sqlBuilDer = "DELETE FROM $this->tableName WHERE cart_id=$id";
         
         $stmt = $this->conn->prepare($this->sqlBuilDer);
         $stmt->execute();
@@ -198,7 +198,7 @@ class BaseModel{
 
     public static function cart($id){
         $model = new static;
-        $model->sqlBuilDer = "SELECT cart.cart_id, cart.cart_name, cart.cart_img, cart.cart_priceB, cart.cart_moTa, khach_hang.name_kh, COUNT(*) AS 'soluong' FROM $model->tableName JOIN khach_hang ON cart.cart_idUser = khach_hang.id WHERE khach_hang.id = '$id' GROUP BY cart.cart_name HAVING COUNT(cart.cart_name)  ORDER BY cart.cart_id DESC";
+        $model->sqlBuilDer = "SELECT cart.cart_id, cart.cart_idProduct, cart.cart_name, cart.cart_img, cart.cart_priceB, cart.cart_moTa, khach_hang.name_kh, COUNT(*) AS 'soluong' FROM $model->tableName JOIN khach_hang ON cart.cart_idUser = khach_hang.id WHERE khach_hang.id = '$id' GROUP BY cart.cart_name HAVING COUNT(cart.cart_name)  ORDER BY cart.cart_id DESC";
         $stmt = $model->conn->prepare($model->sqlBuilDer);
         $stmt->execute();
         $result = $stmt->fetchAll(PDO::FETCH_CLASS);
